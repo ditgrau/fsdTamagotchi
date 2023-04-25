@@ -19,10 +19,16 @@ body {
 .full {
     width: 16em;
     height: 40em;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    background-color: aqua;
+}
+
+.column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aqua;
 }
 
 .chain {
@@ -36,10 +42,36 @@ body {
     height: 18.5em;
     border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
     background-color: rgb(158, 123, 191);
+    margin: 0;
+    align-items: center;
 }
 
 .footer {
     width: 12em;
     height: 6em;
     background-color: black;
+}
+
+.ears {
+    height: 6em;
+    width: 14.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-ear {
+    width: 0; 
+    height: 0; 
+    border-left: 4em solid #f0ad4e;
+    border-right: 4em solid transparent;
+    border-bottom: 6em solid transparent;
+    margin-right: -2em;
+}
+
+.left-ear {
+    width: 0; 
+    height: 0; 
+    border-right: 4em solid #f0ad4e;
+    border-left: 4em solid transparent;
+    border-bottom: 6em solid transparent;
 }
