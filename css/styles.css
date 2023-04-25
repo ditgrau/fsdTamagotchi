@@ -55,17 +55,17 @@ body {
 .ears {
     height: 6em;
     width: 14.5em;
-    margin-top: -2.7em;
     display: flex;
     justify-content: space-between;
+    margin-top: -1.5em;
 }
 
 .right-ear {
-    width: 4.5em;
+    width: 4em;
     height: 8em;
-    background-color: #4b524b;
+    background-color:  rgb(158, 123, 191);
     border-radius: 80% 90% 10% 150% / 10% 30% 100% 150%;
-    transform: rotate(30deg);
+    transform: rotate(25deg);
 
 }
 
