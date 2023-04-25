@@ -1,3 +1,10 @@
+:root {
+    --green: rgb(148, 230, 163);
+    --blue: rgb(115, 192, 255);
+}
+
+/* Esqueleto de la consola */
+
 body {
     width: 100vw;
     height: 100vh;
@@ -19,10 +26,6 @@ body {
 .full {
     width: 16em;
     height: 40em;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    background-color: aqua;
 }
 
 .column {
@@ -41,7 +44,7 @@ body {
     width: 16em;
     height: 18.5em;
     border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
-    background-color: rgb(158, 123, 191);
+    background-color: rgb(148, 230, 163);
     margin: 0;
     align-items: center;
 }
@@ -49,8 +52,10 @@ body {
 .footer {
     width: 12em;
     height: 6em;
-    background-color: black;
 }
+
+/* Parte frontal - Tamagotchi*/ 
+    /* Parte superior - ears */
 
 .ears {
     height: 6em;
@@ -59,18 +64,49 @@ body {
     justify-content: space-between;
     margin-top: -1em;
 }
+
 .right-ear, .left-ear {
     width: 4em;
     height: 8em;
-    background-color: rgb(158, 123, 191);
+    background-color: var(--green)
 }
 
-.right-ear {
+.left-ear {
     border-radius: 30% 100% 10% 120% / 20% 40% 100% 130%;
     transform: rotate(20deg);
 }
 
-.left-ear {
+.right-ear {
     border-radius: 100% 30% 120% 10% / 40% 20% 130% 100%;
     transform: rotate(-20deg);
-}   
+}  
+
+.camera {
+    height:6rem;
+    width: 2rem;
+    display: flex;
+    align-items: end;
+}
+
+.lens {
+    height: 2.3rem;
+    width: 2rem;
+    background-color: black;
+    border-radius: 50%;
+
+}
+.in-left, .in-right {
+    width: 2em;
+    height: 3.5em;
+    background-color:var(--blue);
+}
+
+.in-left { 
+    border-radius: 30% 130% 10% 150% / 20% 40% 100% 130%;
+    margin: 1.2rem 0rem 0rem 1rem;
+}
+
+.in-right {
+    border-radius: 130% 30% 150% 10% / 40% 20% 130% 100%;
+    margin: 1.2rem 0rem 0rem 1rem;
+}
