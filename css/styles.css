@@ -49,7 +49,7 @@ body {
     align-items: center;
     margin-top: -4.5em;
     z-index: 3;
-    box-shadow: 0px 100px 100px rgba(23, 12, 0, 0.689);
+    
 }
 
 .footer {
@@ -86,7 +86,7 @@ body {
 }  
 
 .camera {
-    height:6rem;
+    height:4.8rem;
     width: 2rem;
     display: flex;
     align-items: end;
@@ -115,3 +115,23 @@ body {
     border-radius: 130% 30% 150% 10% / 40% 20% 130% 100%;
     margin: 1.2rem 0rem 0rem 1rem;
 }
+
+.zigzag {
+    width: 10.5rem;
+    height: 3em;
+    background-color: blueviolet;
+    display:block;
+    background: linear-gradient(
+        45deg, transparent 33.33%,
+        #ff8d8d 33.33%, #ff8d8d 66.66%, 
+        transparent 66.66%
+        ),
+        linear-gradient(
+        -45deg, transparent 33.33%,
+        #ff8d8d 33.33%, #ff8d8d 66.66%, 
+        transparent 66.66%
+        );
+    background-size: 3.5em 9em;
+    transform: rotate(180deg);
+}
+
