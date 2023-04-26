@@ -40,7 +40,7 @@ body {
     background-color: blueviolet;
 }
 
-.tama {
+.egg {
     width: 16em;
     height: 18.5em;
     border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
@@ -50,8 +50,8 @@ body {
 }
 
 .footer {
-    width: 12em;
-    height: 6em;
+    /* width: 12em; */
+    /* height: 6em; */
 }
 
 /* Parte frontal - Tamagotchi*/ 
