@@ -45,7 +45,6 @@ body {
     height: 18.5em;
     border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
     background-color: rgb(148, 230, 163);
-    margin: 0;
     align-items: center;
     margin-top: -4.5em;
     z-index: 3;
@@ -116,22 +115,33 @@ body {
     margin: 1.2rem 0rem 0rem 1rem;
 }
 
+/* Parte trasera */
+
+.screen {
+    width: 13em;
+    height: 14.5em;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background-color: rgb(27, 27, 27);
+    align-items: center;
+    margin-top: -4em;
+}
+
 .zigzag {
     width: 10.5rem;
-    height: 3em;
+    height: 4em;
     background-color: blueviolet;
     display:block;
     background: linear-gradient(
         45deg, transparent 33.33%,
-        #ff8d8d 33.33%, #ff8d8d 66.66%, 
+        var(--green) 33.33%, var(--green) 66.66%, 
         transparent 66.66%
         ),
         linear-gradient(
         -45deg, transparent 33.33%,
-        #ff8d8d 33.33%, #ff8d8d 66.66%, 
+        var(--green) 33.33%, var(--green) 66.66%, 
         transparent 66.66%
         );
     background-size: 3.5em 9em;
     transform: rotate(180deg);
+    margin-top: 3.2em;
 }
-
