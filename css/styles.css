@@ -45,7 +45,6 @@ body {
     height: 18.5em;
     border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
     background-color: rgb(148, 230, 163);
-    align-items: center;
     margin-top: -4.5em;
     z-index: 3;
     
@@ -84,20 +83,6 @@ body {
     transform: rotate(-20deg);
 }  
 
-.camera {
-    height:4.8rem;
-    width: 2rem;
-    display: flex;
-    align-items: end;
-}
-
-.lens {
-    height: 2.3rem;
-    width: 2rem;
-    background-color: black;
-    border-radius: 50%;
-
-}
 .in-left, .in-right {
     z-index: 2;
     width: 2em;
@@ -115,20 +100,71 @@ body {
     margin: 1.2rem 0rem 0rem 1rem;
 }
 
+
+    /* Parte superior - appearance */ 
+
+
+.camera {
+    height:4.8rem;
+    width: 1.7rem;
+    display: flex;
+    align-items: end;
+}
+
+.lens {
+    height: 2rem;
+    width: 1.7rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.face {
+    height: 4rem;
+    width: 11.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -0.8em
+}
+
+.mouth {
+    width: 2.5rem;
+    height:1.3rem;
+    background-color: brown;
+    margin-top: 1em;
+}
+/* preguntarle a Andrea para mencionar a todas las clases
+que contengan 'Cheek' */
+
+.cheek-left, .cheek-right{
+    display: flex;
+    flex-direction: row;
+}
+
+.moustache {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: blue;
+    align-self: flex-end;
+}
+
+.eye {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: coral;
+}
 /* Parte trasera */
 
 .screen {
     width: 13em;
     height: 14.5em;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
     background-color: rgb(255, 246, 185);
-    align-items: center;
     margin-top: -4em;
 }
 
 .screen-up {
     height: 4em;
-    background-color: 
 }
 
 .screen-center {
@@ -141,7 +177,6 @@ body {
 .screen-down {
     width: 6.5em;
     height: 2.1em;
-    
     border-radius: 0.5em;
     display:flex;
     justify-content: space-between;
@@ -175,5 +210,5 @@ body {
         );
     background-size: 3.5em 9em;
     transform: rotate(180deg);
-    margin-top: 3.2em;
+    margin-top: 3em;
 }
