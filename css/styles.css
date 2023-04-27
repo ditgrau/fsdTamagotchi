@@ -132,12 +132,9 @@ body {
     background-color: brown;
     margin-top: 1em;
 }
-/* preguntarle a Andrea para mencionar a todas las clases
-que contengan 'Cheek' */
 
 .cheek-left, .cheek-right{
     display: flex;
-    flex-direction: row;
 }
 
 .moustache {
@@ -234,6 +231,12 @@ que contengan 'Cheek' */
     height: 7em;
     background-color: rgb(241, 237, 234);
     border-radius: 0.5em;
+    display:grid;
+    grid-template-columns: 32fr;
+    grid-template-rows: 16fr;
+}
+.screen-center > div {
+    border: solid black 0.05rem;
 }
 
 .screen-down {
