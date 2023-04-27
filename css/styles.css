@@ -153,6 +153,51 @@ que contengan 'Cheek' */
     border-radius: 50%;
     background-color: coral;
 }
+
+/* Controls - parte delantera */
+
+.rectangle {
+    display:flex;
+    height: 2.2rem;
+    width: 13rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 0.3rem;
+}
+
+.button-front {
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.base {
+    height: 5.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -1.7em;
+}
+
+.left-hand, .right-hand {
+    height: 6.7rem;
+    width: 6.7rem;
+    border-radius: 50%;
+    background-color: beige;
+    z-index: 4;
+}
+
+.middle {
+    width: 5.5rem;
+    height: 6rem;
+    background-color: beige;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    z-index: 4;
+}
+
 /* Parte trasera */
 
 .screen {
