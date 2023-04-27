@@ -171,6 +171,14 @@ que contengan 'Cheek' */
     background-color: cornflowerblue;
     border-radius: 50%;
     z-index: 5;
+    justify-content: center;
+}
+
+.press-front {
+    height: 1.7rem;
+    width: 1.7rem;
+    background-color: rgb(187, 211, 255);
+    border-radius: 50%;
 }
 
 .base {
@@ -196,6 +204,15 @@ que contengan 'Cheek' */
     margin-left: -3rem;
     margin-right: -3rem;
     z-index: 4;
+}
+
+.curve {
+    width:3rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--green);
+    z-index: 5;
+    margin:0.2rem;
 }
 
 /* Parte trasera */
