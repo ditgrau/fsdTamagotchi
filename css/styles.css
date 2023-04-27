@@ -1,6 +1,7 @@
 :root {
     --green: rgb(148, 230, 163);
     --blue: rgb(115, 192, 255);
+    --pink:rgb(255, 159, 191);
 }
 
 /* Esqueleto de la consola */
@@ -88,6 +89,7 @@ body {
     width: 2em;
     height: 3.5em;
     background-color:var(--blue);
+    border: 0.2rem solid rgba(120, 170, 255, 0.463);
 }
 
 .in-left { 
@@ -97,7 +99,7 @@ body {
 
 .in-right {
     border-radius: 130% 30% 150% 10% / 40% 20% 130% 100%;
-    margin: 1.2rem 0rem 0rem 1rem;
+    margin: 1.2rem 0rem 0rem 0.6rem;
 }
 
 
@@ -140,8 +142,27 @@ body {
 .moustache {
     width: 2.4rem;
     height: 2.4rem;
-    background-color: blue;
     align-self: flex-end;
+}
+
+.mous1, .mous2 {
+    background-color: var(--pink);
+    border-radius: 1em;
+    height: 0.35rem;
+}
+
+.mous1 {
+    width: 2.4rem;
+    transform: rotate(7deg);
+}
+
+.mous2 {
+    width: 1.8rem;
+    transform: rotate(-20deg);
+    margin:0.8em;
+}
+.mous-right {
+    transform: scaleX(-1);
 }
 
 .eye {
@@ -192,6 +213,7 @@ body {
     border-radius: 50%;
     background-color: beige;
     z-index: 4;
+    justify-content: center;
 }
 
 .middle {
@@ -200,7 +222,7 @@ body {
     background-color: beige;
     margin-left: -3rem;
     margin-right: -3rem;
-    z-index: 4;
+    z-index: 3;
 }
 
 .curve {
@@ -211,6 +233,40 @@ body {
     z-index: 5;
     margin:0.2rem;
 }
+
+.cross-box {
+    width: 4rem;
+    height: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+}
+.cross-full {
+    background-color: rgb(205, 152, 255);
+}
+
+/* revisar esto, no se si me gusta */
+.cross-up {
+    border-radius: 0.25rem 0.25rem 0 0;
+    box-shadow: 0 0 0.1em 0.2rem var(--green);
+}
+
+.cross-right {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.cross-down {
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.cross-left {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.cross-center {
+    border-radius:none;
+}
+
 
 /* Parte trasera */
 
