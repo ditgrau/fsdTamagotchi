@@ -36,9 +36,9 @@ body {
 }
 
 .chain {
-    width: 5.5em;
+    width: 5em;
     height: 15em;
-    background-color: rgb(42, 165, 157);;
+    background-color: blueviolet;
 }
 
 .egg {
@@ -47,13 +47,50 @@ body {
     border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
     background-color: rgb(148, 230, 163);
     margin-top: -4.5em;
-    z-index: 3;
-    
+    z-index: 3; 
 }
 
 .footer {
     /* width: 12em; */
     /* height: 6em; */
+}
+/* Chain */
+
+.correa {
+
+}   
+.up-chain {
+    width: 2.4rem;
+    height: 0.9rem;
+    background-color: grey;
+}
+.down-chain {
+    display:flex;
+    align-items: flex-start;
+    transform: translate(0, 12.3rem);
+}
+
+.circle-chain {
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+    background-color: grey;
+}
+.square-chain {
+    width: 0.2rem;
+    height: 0.3rem;
+    background-color: grey;
+}
+
+.fix-chain {
+    width: 0.5rem;
+    height: 1.6rem;
+    background-color: grey;
+}
+.row-circle {
+    width: 4rem;
+    height: 1rem;
+    display: flex;
 }
 
 /* Parte frontal - Tamagotchi*/ 
@@ -95,6 +132,7 @@ body {
 .in-left { 
     border-radius: 30% 130% 10% 150% / 20% 40% 100% 130%;
     margin: 1.2rem 0rem 0rem 1rem;
+    box-shadow: inset; 
 }
 
 .in-right {
@@ -116,7 +154,7 @@ body {
 .lens {
     height: 2rem;
     width: 1.7rem;
-    background-color: black;
+    background-color: rgb(151, 100, 100);
     border-radius: 50%;
 }
 
@@ -125,7 +163,7 @@ body {
     width: 11.5rem;
     display: flex;
     justify-content: space-between;
-    margin-top: -0.8em
+    margin-top: -0.8em;
 }
 
 .mouth {
