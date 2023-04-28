@@ -112,11 +112,13 @@ body {
 .left-ear {
     border-radius: 30% 100% 10% 120% / 20% 40% 100% 130%;
     transform: rotate(20deg);
+    background: linear-gradient(-60deg,#3e9e57 30%, #94e6a3 60%);
 }
 
 .right-ear {
     border-radius: 100% 30% 120% 10% / 40% 20% 130% 100%;
     transform: rotate(-20deg);
+    background: linear-gradient(60deg,#3e9e57 30%, #94e6a3 60%);
 }  
 
     /* EARS - inside - Front side*/
@@ -132,14 +134,14 @@ body {
     margin: 1.2rem 0rem 0rem 1rem;
     background: #73C0FF;
     border: solid 0.3rem rgb(107, 169, 255);
-    background: linear-gradient(80deg,#73C0FF 0%, #5f78ff 120%);
+    background: linear-gradient(80deg,#73C0FF 0%, #328bff 120%);
 }
 
 .in-right {
     border-radius: 130% 30% 150% 10% / 40% 20% 130% 100%;
     margin: 1.2rem 0rem 0rem 0.6rem;
-    border: solid 0.3rem rgb(107, 169, 255);
-    background: linear-gradient(-80deg,#73C0FF 0%, #5f78ff 120%);
+    border: solid 0.3rem var(--blue);
+    background: linear-gradient(-80deg,#73C0FF 0%, #328bff  120%);
 }
 
 
@@ -219,10 +221,12 @@ body {
 }
 
 .eye {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.1rem;
+    height: 1.1rem;
     border-radius: 50%;
     background-color: var(--pink);
+    background: radial-gradient(circle farthest-side at top center, #ffbad1 30%, #ff9fbf 80%);
+    border: solid 0.25rem var(--pink);
 }
 
     /* EGG - Controls - Front side*/
@@ -239,7 +243,7 @@ body {
 .button-front {
     height: 2.4rem;
     width: 2.6rem;
-    background-color: rgb(109, 192, 135);
+    background-color: #6dc384;
     border-radius: 50%;
     z-index: 5;
     justify-content: center;
@@ -248,7 +252,7 @@ body {
 .press-front {
     height: 1.7rem;
     width: 1.9rem;
-    background-color: var(--green);
+    background: radial-gradient(circle farthest-side at top center, #94e6a3 50%, #6dc384 100%);
     border-radius: 50%;
 }
 
