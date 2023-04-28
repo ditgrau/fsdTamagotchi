@@ -17,6 +17,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(../img/paper.jpg) no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -106,7 +108,8 @@ body {
 .right-ear, .left-ear {
     width: 4em;
     height: 8em;
-    background-color: var(--green)
+    background-color: var(--green);
+    box-shadow: 0 0.5rem 0.4rem 0.15rem rgb(167, 153, 139);
 }
 
 .left-ear {
@@ -128,6 +131,7 @@ body {
     z-index: 2;
     width: 2em;
     height: 3.5em;
+    box-shadow: 0 0.5rem 0.2rem 0.01rem rgb(91, 151, 116);
 }
 
 .in-left { 
@@ -153,9 +157,10 @@ body {
     height: 18.5em;
     border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
     background-color: #65b77b;
-    background: radial-gradient(circle farthest-corner at top center, #94e6a3 40%, #60ad76 100%);
+    background: radial-gradient(circle farthest-corner at top center, #94e6a3 40%, #71bb86 100%);
     margin-top: -4.5em;
-    z-index: 3; 
+    z-index: 3;
+    box-shadow: 0 0.5rem 0.6rem 0.3rem rgb(141, 129, 117);
 }
 
     /* EGG - Front side*/
@@ -292,13 +297,15 @@ body {
     margin-left: -3rem;
     margin-right: -3rem;
     z-index: 3;
+    box-shadow: 0.5rem 0 0.4rem 0.05rem rgb(91, 151, 116);
+    
 }
 
 .curve {
     width:3rem;
     height: 2rem;
     border-radius: 50%;
-    background-color: #72c188 ;
+    background-color: #81ca96 ;
     z-index: 5;
     margin:0.2rem;
 }
