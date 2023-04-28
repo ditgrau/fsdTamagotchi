@@ -160,26 +160,28 @@ body {
     background: radial-gradient(circle farthest-corner at top center, #94e6a3 40%, #71bb86 100%);
     margin-top: -4.5em;
     z-index: 3;
-    box-shadow: 0 0.5rem 0.6rem 0.3rem rgb(141, 129, 117);
+    box-shadow: 0 0.3rem 0.6rem 0.2rem rgb(141, 129, 117);
 }
 
     /* EGG - Front side*/
 
 .camera {
     height:4.8rem;
-    width: 1.7rem;
+    width: 2rem;
     display: flex;
     align-items: end;
     justify-content: center;
 }
 
 .lens {
-    height: 1.3rem;
+    height: 1.1rem;
     width: 1rem;
     background-color: rgb(87, 87, 87);
     border-radius: 50%;
-    border: 0.3rem solid rgb(79, 79, 79);
+    box-shadow: inset 0.1em 0.3em 0.1em 0.3em rgb(47, 47, 47);
     background: radial-gradient(circle farthest-side at top center, #717171 30%,#4F4F4F 80%);
+    border: solid 0.3rem rgb(38, 38, 38);
+    box-shadow: 0 0.05em 0.1rem 0.05rem rgb(91, 151, 116);
 }
 
 .bright-lens {
@@ -220,6 +222,7 @@ body {
     background-color: var(--pink);
     border-radius: 1em;
     height: 0.35rem;
+    box-shadow: 0 0.1em 0.17rem 0.01rem rgb(115, 177, 141);
 }
 
 .mous1 {
@@ -238,12 +241,12 @@ body {
 }
 
 .eye {
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1.4rem;
+    height: 1.4rem;
     border-radius: 50%;
     background-color: var(--pink);
-    background: radial-gradient(circle farthest-side at top center, #ffbad1 30%, #ff9fbf 80%);
-    border: solid 0.25rem var(--pink);
+    box-shadow: 0 0.1em 0.18rem 0.02rem rgb(91, 151, 116);
+    background: radial-gradient(circle farthest-side at top center, rgb(255, 182, 206) 50%,var(--pink) 100%);   
 }
 
     /* EGG - Controls - Front side*/
@@ -264,13 +267,8 @@ body {
     border-radius: 50%;
     z-index: 5;
     justify-content: center;
-}
-
-.press-front {
-    height: 1.7rem;
-    width: 1.9rem;
-    background: radial-gradient(circle farthest-side at top center, #94e6a3 50%, #6dc384 100%);
-    border-radius: 50%;
+    background: radial-gradient(circle farthest-side at top center, #80d897 55%, #65b77b 100%);
+    box-shadow: 0 0.2em 0.20rem 0.05rem rgb(91, 151, 116);
 }
 
 .base {
@@ -278,7 +276,9 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    border-radius: 13rem / 9rem;
     margin-top: -1.7em;
+    /* box-shadow: 0rem -0.2rem 0.2rem 0.02rem rgb(124, 188, 151); */
 }
 
 .left-hand, .right-hand {
@@ -297,8 +297,6 @@ body {
     margin-left: -3rem;
     margin-right: -3rem;
     z-index: 3;
-    box-shadow: 0.5rem 0 0.4rem 0.05rem rgb(91, 151, 116);
-    
 }
 
 .curve {
@@ -326,31 +324,22 @@ body {
 
 .cross-up {
     border-radius: 0.25rem 0.25rem 0 0;
-    box-shadow: 0 0 0.05em 0.2rem var(--green);
-    z-index: 5;
 }
 
 .cross-right {
     border-radius: 0 0.25rem 0.25rem 0;
-    box-shadow: 0 0 0.05em 0.25rem var(--green);
-    
 }
 
 .cross-down {
     border-radius: 0 0 0.25rem 0.25rem;
-    box-shadow: 0 0 0.05em 0.25rem var(--green);
-    z-index: 5;
 }
 
 .cross-left {
     border-radius: 0.25rem 0 0 0.25rem;
-    box-shadow: 0 0 0.05em 0.25rem var(--green); 
 }
 
 .cross-center {
-    border-radius: 20% / 10%;;
-    box-shadow: 0 0 0.05em 0.23rem var(--purple);
-    z-index: 6;
+    
 }
 
         /* Controls - Right cross - Front side*/
@@ -358,27 +347,32 @@ body {
 
 .cross-box-right .cross-full {
     border-radius: 50%;
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 1.2rem;
+    height: 1.15rem;
+    box-shadow: 0 0.1em 0.15rem 0.01rem rgb(153, 143, 120);
 }
 
 .cross-box-right .cross-up {
-    background-color: var(--orange);
+    background-color: #ff9900;
+    background: radial-gradient(circle farthest-side at top center, #ffb13c 40%, #ff9900 100%);
 }
 
 .cross-box-right .cross-right {
     margin-top: 0.2rem;
-    background-color: rgb(255, 255, 124);   
+    background-color: rgb(255, 109, 56); 
+    background: radial-gradient(circle farthest-side at top center, rgb(255, 135, 92) 50%, rgb(255, 109, 56) 100%);
 }
 
 .cross-box-right .cross-down {
-    margin-top: 0.4rem;
-    background-color: rgb(255, 255, 124);
+    margin-top: 0.2rem;
+    background-color: #14D0DB;
+    background: radial-gradient(circle farthest-side at top center, #70e7ed 50%, #14D0DB 100%);
 }
 
 .cross-box-right .cross-left {
     margin-top: 0.2rem;
-    background-color: var(--orange);
+    background-color: #15aeb3;
+    background: radial-gradient(circle farthest-side at top center, #2ac9bc 50%, #15aeb3 100%);
 }
 
     /* EGG - Zigzag - Back side*/
