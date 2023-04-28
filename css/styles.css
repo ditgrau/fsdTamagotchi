@@ -35,12 +35,6 @@ body {
     align-items: center;
 }
 
-.chain {
-    width: 5em;
-    height: 15em;
-    background-color: blueviolet;
-}
-
 .egg {
     width: 16em;
     height: 18.5em;
@@ -54,16 +48,35 @@ body {
     /* width: 12em; */
     /* height: 6em; */
 }
+
+
 /* Chain */
 
-.correa {
+.chain {
+    height: 15em;
+    background-color: blueviolet;
+}
 
-}   
 .up-chain {
     width: 2.4rem;
     height: 0.9rem;
     background-color: grey;
 }
+
+.row-circle {
+    width: 5.2rem;
+    height: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-square {
+    width: 4rem;
+    height: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
 .down-chain {
     display:flex;
     align-items: flex-start;
@@ -87,11 +100,7 @@ body {
     height: 1.6rem;
     background-color: grey;
 }
-.row-circle {
-    width: 4rem;
-    height: 1rem;
-    display: flex;
-}
+
 
 /* Parte frontal - Tamagotchi*/ 
     /* Parte superior - ears */
