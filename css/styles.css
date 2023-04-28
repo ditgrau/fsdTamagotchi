@@ -50,8 +50,9 @@ body {
 
 .up-chain {
     width: 2.4rem;
-    height: 0.9rem;
+    height: 1rem;
     background-color: grey;
+    margin-bottom: -0.7rem;
 }
 
 .row-circle {
@@ -62,7 +63,7 @@ body {
 }
 
 .row-square {
-    width: 4rem;
+    width: 4.6rem;
     height: 0.3rem;
     display: flex;
     justify-content: space-between;
@@ -71,7 +72,6 @@ body {
 .down-chain {
     display:flex;
     align-items: flex-start;
-    transform: translate(0, 12.3rem);
 }
 
 .circle-chain {
@@ -93,6 +93,41 @@ body {
     background-color: grey;
 }
 
+    /* Chain links */
+
+.c-a {
+    width: 4.1rem;
+    margin-bottom: -0.1rem;
+}
+
+.c-b {
+    width: 3.9rem;
+    margin-bottom: -0.1rem;
+}
+
+.c-b div:first-child{
+    transform: rotate(20deg);
+}
+
+.c-b div:nth-child(2) {
+    transform: rotate(-20deg);
+}
+
+.c-c {
+    width: 4.9rem;
+}
+
+.c-d {
+    width: 4.45rem;
+}
+
+.c-d div:first-child{
+    transform: rotate(10deg);
+}
+
+.c-d div:nth-child(2) {
+    transform: rotate(-10deg);
+}
 
 /* EARS */ 
 
@@ -160,7 +195,7 @@ body {
     background: radial-gradient(circle farthest-corner at top center, #94e6a3 40%, #71bb86 100%);
     margin-top: -4.5em;
     z-index: 3;
-    box-shadow: 0 0.3rem 0.6rem 0.2rem rgb(141, 129, 117);
+    box-shadow: 0 0.35rem 0.5rem 0.18rem rgb(141, 129, 117);
 }
 
     /* EGG - Front side*/
@@ -179,9 +214,10 @@ body {
     background-color: rgb(87, 87, 87);
     border-radius: 50%;
     box-shadow: inset 0.1em 0.3em 0.1em 0.3em rgb(47, 47, 47);
-    background: radial-gradient(circle farthest-side at top center, #717171 30%,#4F4F4F 80%);
+    background: radial-gradient(circle farthest-side at top center, #696969 30%,#4F4F4F 80%);
     border: solid 0.3rem rgb(38, 38, 38);
     box-shadow: 0 0.05em 0.1rem 0.05rem rgb(91, 151, 116);
+    box-shadow: inset 0 0 0.1em 0.15em rgb(61, 61, 61);
 }
 
 .bright-lens {
@@ -249,7 +285,7 @@ body {
     background: radial-gradient(circle farthest-side at top center, rgb(255, 182, 206) 50%,var(--pink) 100%);   
 }
 
-    /* EGG - Controls - Front side*/
+        /* EGG - Controls - Front side*/
 
 .rectangle {
     display:flex;
@@ -267,7 +303,7 @@ body {
     border-radius: 50%;
     z-index: 5;
     justify-content: center;
-    background: radial-gradient(circle farthest-side at top center, #80d897 55%, #65b77b 100%);
+    background: radial-gradient(circle farthest-side at top center, #77cd8e 55%, #5dac72 100%);
     box-shadow: 0 0.2em 0.20rem 0.05rem rgb(91, 151, 116);
 }
 
@@ -308,7 +344,7 @@ body {
     margin:0.2rem;
 }
 
-        /* Controls - Left cross - Front side*/
+            /* Controls - Left cross - Front side*/
 
 .cross-box {
     width: 4rem;
@@ -338,11 +374,8 @@ body {
     border-radius: 0.25rem 0 0 0.25rem;
 }
 
-.cross-center {
-    
-}
 
-        /* Controls - Right cross - Front side*/
+            /* Controls - Right cross - Front side*/
 
 
 .cross-box-right .cross-full {
@@ -375,7 +408,9 @@ body {
     background: radial-gradient(circle farthest-side at top center, #2ac9bc 50%, #15aeb3 100%);
 }
 
-    /* EGG - Zigzag - Back side*/
+    /* EGG - Back side*/
+
+        /* EGG - Zigzag - Back side*/
 
 .zigzag {
     width: 10.5rem;
@@ -396,15 +431,15 @@ body {
     margin-top: 3em;
 }
 
-    /* EGG - Screen - Back side*/
+        /* EGG - Screen - Back side*/
     
-
 .screen {
     width: 13em;
     height: 14.5em;
     border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
     background-color: rgb(255, 241, 172);
     margin-top: -4em;
+    box-shadow: inset 0.02em -0.13em 0.30rem 0.05rem rgb(163, 158, 122);
 }
 
 .screen-up {
@@ -416,9 +451,18 @@ body {
     height: 7em;
     background-color: var(--beige);
     border-radius: 0.5em;
-    display:grid;
-    grid-template-columns: 32*1fr;
-    grid-template-rows: 16*1fr;
+    box-shadow: inset 0.02em -0.07em 0.30rem 0.12rem rgb(195, 192, 178);
+    
+}
+
+.tamagotchi {
+    width: 8em;
+    height: 7em;
+    background: url(../img/huevo_low.png) no-repeat;
+    background-size: cover;
+    transform: scale(80%);
+    margin-left: -0.5rem;
+
 }
 
 .screen-down {
@@ -431,30 +475,19 @@ body {
 }
 
 .button {
-    width: 1.4em;
-    height: 1.4em;
-    background-color: rgb(179, 102, 44);
+    width: 1.3em;
+    height: 1.3em;
+    background-color: #14D0DB;
+    background: radial-gradient(circle farthest-side at top center, #70e7ed 50%, #14D0DB 100%);
     border-radius: 50%;
+    box-shadow: 0 0.1em 0.15rem 0.01rem rgb(163, 158, 122);
 }
 
 .screen-down div:nth-child(2) {
     align-self: flex-end;
+    background-color: var(--orange);background: radial-gradient(circle farthest-side at top center, rgb(255, 177, 31) 50%, var(--orange) 100%);
 }
 
-.false-button {
-    width: 2em;
-    height: 2em;
-    background-color: rgb(255, 161, 89);
-}
-
-.false-button:hover {
-    width: 2em;
-    height: 2em;
-    background-color: rgb(255, 161, 89);
-    border-radius: 0%;
-    transform: translate(4em,);
-
-}
 .button:hover {
    
 }
