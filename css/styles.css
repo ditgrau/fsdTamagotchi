@@ -7,7 +7,7 @@
     --beige: rgb(255, 255, 237);
 }
 
-/* Esqueleto de la consola */
+/* Base Structure */
 
 body {
     width: 100vw;
@@ -38,6 +38,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -99,9 +104,8 @@ body {
     background: linear-gradient(155deg,#a9a9a9 20%, #4f4f4f 80%);
     box-shadow: -0.1rem 0.1rem 0.15rem 0.01rem rgb(156, 143, 130);
 }
-}
 
-    /* Chain links */
+    /*/ Chain links - CHAIN /*/
 
 .c-a, .c-b, .c-k, .c-l, .c-m {
     margin-bottom: -0.1rem;
@@ -197,15 +201,14 @@ body {
     transform: rotate(25deg);
 }
 
+
 /* EARS */ 
 
 .ears {
+    z-index: 1;
     height: 6em;
     width: 13em;
-    display: flex;
-    justify-content: space-between;
     margin-top: -2em;
-    z-index: 1;
 }
 
 .right-ear, .left-ear {
@@ -228,7 +231,7 @@ body {
     background: radial-gradient(ellipse farthest-side at left center, #3e9e57 10%, #94e6a3 90%);
 }  
 
-    /* EARS - inside - Front side*/
+    /*/ EARS - Inner part - Front side /*/
 
 .in-left, .in-right {
     z-index: 2;
@@ -264,9 +267,10 @@ body {
     margin-top: -4.5em;
     z-index: 3;
     box-shadow: 0 0.35rem 0.5rem 0.18rem rgb(141, 129, 117);
+    box-shadow: inset 0 -0.7rem 0.7em 0.15em #5dac72;
 }
 
-    /* EGG - Front side*/
+    /*/ Front side - EGG /*/
 
 .camera {
     height:4.8rem;
@@ -300,8 +304,6 @@ body {
 .face {
     height: 4rem;
     width: 11.5rem;
-    display: flex;
-    justify-content: space-between;
     margin-top: -0.8em;
 }
 
@@ -353,13 +355,11 @@ body {
     background: radial-gradient(circle farthest-side at top center, rgb(255, 182, 206) 50%,var(--pink) 100%);   
 }
 
-        /* EGG - Controls - Front side*/
+        /*// Controls - Front side - EGG//*/
 
 .rectangle {
-    display:flex;
     height: 2.2rem;
     width: 13rem;
-    justify-content: space-between;
     align-items: flex-end;
     margin-top: 0.3rem;
 }
@@ -367,7 +367,6 @@ body {
 .button-front {
     height: 2.2rem;
     width: 2.4rem;
-    background-color: #6dc384;
     border-radius: 50%;
     z-index: 5;
     justify-content: center;
@@ -382,7 +381,6 @@ body {
     justify-content: center;
     border-radius: 13rem / 9rem;
     margin-top: -1.7em;
-    /* box-shadow: 0rem -0.2rem 0.2rem 0.02rem rgb(124, 188, 151); */
 }
 
 .left-hand, .right-hand {
@@ -412,7 +410,7 @@ body {
     margin:0.2rem;
 }
 
-            /* Controls - Left cross - Front side*/
+            /*/// Left cross - Controls - Front side - EGG ///*/
 
 .cross-box {
     width: 4rem;
@@ -442,9 +440,7 @@ body {
     border-radius: 0.25rem 0 0 0.25rem;
 }
 
-
-            /* Controls - Right cross - Front side*/
-
+            /*/// Right cross - Controls - Front side - EGG ///*/
 
 .cross-box-right .cross-full {
     border-radius: 50%;
@@ -476,9 +472,7 @@ body {
     background: radial-gradient(circle farthest-side at top center, #2ac9bc 50%, #15aeb3 100%);
 }
 
-    /* EGG - Back side*/
-
-        /* EGG - Zigzag - Back side*/
+    /*/ Back side - EGG /*/
 
 .zigzag {
     width: 10.5rem;
@@ -499,7 +493,7 @@ body {
     margin-top: 3em;
 }
 
-        /* EGG - Screen - Back side*/
+        /*// Screen - Back side - EGG //*/
     
 .screen {
     width: 13em;
@@ -519,8 +513,7 @@ body {
     height: 7em;
     background-color: var(--beige);
     border-radius: 0.5em;
-    box-shadow: inset 0.02em -0.07em 0.30rem 0.12rem rgb(195, 192, 178);
-    
+    box-shadow: inset 0.02em -0.07em 0.30rem 0.12rem rgb(195, 192, 178);   
 }
 
 .tamagotchi {
@@ -530,15 +523,12 @@ body {
     background-size: cover;
     transform: scale(80%);
     margin-left: -0.5rem;
-
 }
 
 .screen-down {
     width: 6.5em;
     height: 2.1em;
     border-radius: 0.5em;
-    display:flex;
-    justify-content: space-between;
     margin:0.6em
 }
 
