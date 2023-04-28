@@ -2,6 +2,9 @@
     --green: rgb(148, 230, 163);
     --blue: rgb(115, 192, 255);
     --pink:rgb(255, 159, 191);
+    --purple: rgb(205, 152, 255);
+    --orange: rgb(255, 157, 45);
+    --beige: rgb(255, 255, 237);
 }
 
 /* Esqueleto de la consola */
@@ -35,22 +38,8 @@ body {
     align-items: center;
 }
 
-.egg {
-    width: 16em;
-    height: 18.5em;
-    border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
-    background-color: rgb(148, 230, 163);
-    margin-top: -4.5em;
-    z-index: 3; 
-}
 
-.footer {
-    /* width: 12em; */
-    /* height: 6em; */
-}
-
-
-/* Chain */
+/* CHAIN */
 
 .chain {
     height: 15em;
@@ -102,8 +91,7 @@ body {
 }
 
 
-/* Parte frontal - Tamagotchi*/ 
-    /* Parte superior - ears */
+/* EARS */ 
 
 .ears {
     height: 6em;
@@ -130,12 +118,14 @@ body {
     transform: rotate(-20deg);
 }  
 
+    /* EARS - inside - Front side*/
+
 .in-left, .in-right {
     z-index: 2;
     width: 2em;
     height: 3.5em;
     background-color:var(--blue);
-    border: 0.2rem solid rgba(120, 170, 255, 0.463);
+    border: 0.25rem solid rgba(120, 170, 255, 0.463);
 }
 
 .in-left { 
@@ -150,8 +140,18 @@ body {
 }
 
 
-    /* Parte superior - appearance */ 
+/* EGG */ 
 
+.egg {
+    width: 16em;
+    height: 18.5em;
+    border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
+    background-color: rgb(148, 230, 163);
+    margin-top: -4.5em;
+    z-index: 3; 
+}
+
+    /* EGG - Front side*/
 
 .camera {
     height:4.8rem;
@@ -208,6 +208,7 @@ body {
     transform: rotate(-20deg);
     margin:0.8em;
 }
+
 .mous-right {
     transform: scaleX(-1);
 }
@@ -216,10 +217,10 @@ body {
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 50%;
-    background-color: coral;
+    background-color: var(--pink);
 }
 
-/* Controls - parte delantera */
+    /* EGG - Controls - Front side*/
 
 .rectangle {
     display:flex;
@@ -232,8 +233,8 @@ body {
 
 .button-front {
     height: 2.4rem;
-    width: 2.4rem;
-    background-color: cornflowerblue;
+    width: 2.6rem;
+    background-color: rgb(109, 192, 135);
     border-radius: 50%;
     z-index: 5;
     justify-content: center;
@@ -241,8 +242,8 @@ body {
 
 .press-front {
     height: 1.7rem;
-    width: 1.7rem;
-    background-color: rgb(187, 211, 255);
+    width: 1.9rem;
+    background-color: var(--green);
     border-radius: 50%;
 }
 
@@ -258,7 +259,7 @@ body {
     height: 6.7rem;
     width: 6.7rem;
     border-radius: 50%;
-    background-color: beige;
+    background-color: var(--beige);
     z-index: 4;
     justify-content: center;
 }
@@ -266,7 +267,7 @@ body {
 .middle {
     width: 5.5rem;
     height: 6rem;
-    background-color: beige;
+    background-color: var(--beige);
     margin-left: -3rem;
     margin-right: -3rem;
     z-index: 3;
@@ -281,6 +282,8 @@ body {
     margin:0.2rem;
 }
 
+        /* Controls - Left cross - Front side*/
+
 .cross-box {
     width: 4rem;
     height: 4rem;
@@ -288,40 +291,97 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; 
 }
+
 .cross-full {
-    background-color: rgb(205, 152, 255);
+    background-color: var(--purple);
 }
 
-/* revisar esto, no se si me gusta */
 .cross-up {
     border-radius: 0.25rem 0.25rem 0 0;
-    box-shadow: 0 0 0.1em 0.2rem var(--green);
+    box-shadow: 0 0 0.05em 0.2rem var(--green);
+    z-index: 5;
 }
 
 .cross-right {
     border-radius: 0 0.25rem 0.25rem 0;
+    box-shadow: 0 0 0.05em 0.25rem var(--green);
+    
 }
 
 .cross-down {
     border-radius: 0 0 0.25rem 0.25rem;
+    box-shadow: 0 0 0.05em 0.25rem var(--green);
+    z-index: 5;
 }
 
 .cross-left {
     border-radius: 0.25rem 0 0 0.25rem;
+    box-shadow: 0 0 0.05em 0.25rem var(--green); 
 }
 
 .cross-center {
-    border-radius:none;
+    border-radius: 20% / 10%;;
+    box-shadow: 0 0 0.05em 0.23rem var(--purple);
+    z-index: 6;
 }
 
+        /* Controls - Right cross - Front side*/
 
-/* Parte trasera */
+
+.cross-box-right .cross-full {
+    border-radius: 50%;
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.cross-box-right .cross-up {
+    background-color: var(--orange);
+}
+
+.cross-box-right .cross-right {
+    margin-top: 0.2rem;
+    background-color: rgb(255, 255, 124);   
+}
+
+.cross-box-right .cross-down {
+    margin-top: 0.4rem;
+    background-color: rgb(255, 255, 124);
+}
+
+.cross-box-right .cross-left {
+    margin-top: 0.2rem;
+    background-color: var(--orange);
+}
+
+    /* EGG - Zigzag - Back side*/
+
+.zigzag {
+    width: 10.5rem;
+    height: 4em;
+    display:block;
+    background: linear-gradient(
+        45deg, transparent 33.33%,
+        var(--green) 33.33%, var(--green) 66.66%, 
+        transparent 66.66%
+        ),
+        linear-gradient(
+        -45deg, transparent 33.33%,
+        var(--green) 33.33%, var(--green) 66.66%, 
+        transparent 66.66%
+        );
+    background-size: 3.5em 9em;
+    transform: rotate(180deg);
+    margin-top: 3em;
+}
+
+    /* EGG - Screen - Back side*/
+    
 
 .screen {
     width: 13em;
     height: 14.5em;
     border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
-    background-color: rgb(255, 246, 185);
+    background-color: rgb(255, 241, 172);
     margin-top: -4em;
 }
 
@@ -332,14 +392,11 @@ body {
 .screen-center {
     width: 8em;
     height: 7em;
-    background-color: rgb(241, 237, 234);
+    background-color: var(--beige);
     border-radius: 0.5em;
     display:grid;
-    grid-template-columns: 32fr;
-    grid-template-rows: 16fr;
-}
-.screen-center > div {
-    border: solid black 0.05rem;
+    grid-template-columns: 32*1fr;
+    grid-template-rows: 16*1fr;
 }
 
 .screen-down {
@@ -362,21 +419,4 @@ body {
     align-self: flex-end;
 }
 
-.zigzag {
-    width: 10.5rem;
-    height: 4em;
-    display:block;
-    background: linear-gradient(
-        45deg, transparent 33.33%,
-        var(--green) 33.33%, var(--green) 66.66%, 
-        transparent 66.66%
-        ),
-        linear-gradient(
-        -45deg, transparent 33.33%,
-        var(--green) 33.33%, var(--green) 66.66%, 
-        transparent 66.66%
-        );
-    background-size: 3.5em 9em;
-    transform: rotate(180deg);
-    margin-top: 3em;
-}
+
