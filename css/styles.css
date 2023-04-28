@@ -44,8 +44,7 @@ body {
 /* CHAIN */
 
 .chain {
-    height: 15em;
-    background-color: blueviolet;
+    height: 13em;
 }
 
 .up-chain {
@@ -53,6 +52,8 @@ body {
     height: 1rem;
     background-color: grey;
     margin-bottom: -0.7rem;
+    background: linear-gradient(180deg,#b9b9b9 30%, #5e5e5e 100%);
+    box-shadow: 0 0.2rem 0.2rem 0.05rem rgb(156, 143, 130);
 }
 
 .row-circle {
@@ -72,6 +73,7 @@ body {
 .down-chain {
     display:flex;
     align-items: flex-start;
+    margin-top: -0.2rem;
 }
 
 .circle-chain {
@@ -79,30 +81,38 @@ body {
     height: 0.85rem;
     border-radius: 50%;
     background-color: grey;
+    background: radial-gradient(circle farthest-side at top center, #acacac 20%,#4f4f4f 100%);
+    box-shadow: 0 0.2rem 0.15rem 0.01rem rgb(156, 143, 130);
 }
 
 .square-chain {
     width: 0.2rem;
     height: 0.3rem;
     background-color: grey;
+    background: linear-gradient(10deg,#909090 3%, #4f4f4f 80%);
 }
 
 .fix-chain {
     width: 0.5rem;
     height: 1.6rem;
     background-color: grey;
+    background: linear-gradient(155deg,#a9a9a9 20%, #4f4f4f 80%);
+    box-shadow: -0.1rem 0.1rem 0.15rem 0.01rem rgb(156, 143, 130);
+}
 }
 
     /* Chain links */
 
+.c-a, .c-b, .c-k, .c-l, .c-m {
+    margin-bottom: -0.1rem;
+}    
+
 .c-a {
     width: 4.1rem;
-    margin-bottom: -0.1rem;
 }
 
 .c-b {
     width: 3.9rem;
-    margin-bottom: -0.1rem;
 }
 
 .c-b div:first-child{
@@ -121,12 +131,70 @@ body {
     width: 4.45rem;
 }
 
-.c-d div:first-child{
+.c-d div:first-child, .c-i div:nth-child(2) {
     transform: rotate(10deg);
 }
 
-.c-d div:nth-child(2) {
+.c-d div:nth-child(2), .c-i div:first-child {
     transform: rotate(-10deg);
+}
+.c-e {
+    width: 4.5rem;
+}
+
+.c-f {
+    width: 5rem;
+}
+.c-g {
+    width: 4.3rem;
+    margin-bottom: -0.05rem;
+}
+.c-g div:first-child{
+    transform: rotate(-5deg);
+}
+
+.c-g div:nth-child(2) {
+    transform: rotate(5deg);
+}
+
+.c-h {
+    width: 4.7rem;
+}
+.c-i {
+    width: 4rem;
+    margin-bottom: -0.05rem
+} 
+
+.c-j {
+    width: 4.4rem;
+    margin-bottom: -0.05rem;
+}
+
+.c-k {
+    width: 3.3rem;
+}
+
+.c-k div:first-child{
+    transform: rotate(-18deg);
+}
+
+.c-k div:nth-child(2) {
+    transform: rotate(18deg);
+} 
+
+.c-l {
+    width: 3.4rem;
+}
+.c-m {
+    width: 2.3rem;
+}
+
+.c-m div:first-child{
+    transform: rotate(-25deg);
+}
+
+.c-m div:nth-child(2) {
+    transform: rotate(25deg);
 }
 
 /* EARS */ 
