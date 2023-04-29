@@ -270,6 +270,18 @@ body {
     box-shadow: inset 0 -0.7rem 0.7em 0.15em #5dac72;
 }
 
+.last-shadow {
+    width: 16em;
+    height: 18.5em;
+    border-radius: 50% 50% 50% 50% / 65% 65% 40% 40%;
+    box-shadow: 0 0.35rem 0.5rem 0.18rem rgb(141, 129, 117);
+    transform: translate(0rem,-16.7rem);
+}
+
+.shadow-back {
+    margin-top: -0.8rem;
+}
+
     /*/ Front side - EGG /*/
 
 .camera {
