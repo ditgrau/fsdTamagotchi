@@ -18,11 +18,9 @@ function popo() {
 
 function death() {
     let displayImage = document.getElementById('content')
-    if (displayImage.src.match('./img/tama.PNG')) {
+    if (displayImage.src.match('./img/caca.PNG')) {
         displayImage.src = "./img/muerte.PNG"
     } else {
         displayImage.src = "./img/huevo.PNG"
     }
 }
-
-
