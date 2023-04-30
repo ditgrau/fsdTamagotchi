@@ -571,6 +571,11 @@ body {
 
 /* -- Javascript function - hatching an egg -- */
 
+
+.birth{
+    background-image: url(../img/tama.PNG);
+}
+
 .hatching{
     background-image: url(../img/tama.PNG);
 }
