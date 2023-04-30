@@ -13,7 +13,7 @@ Este Tamagotchi ha sido desarrollado como parte del Bootcamp de Full Stack Devel
 
 <table align="center">
 <tr>
-<td><b>🔴 Atención:</b> Primer proyecto sin previos conocimientos en programación.
+<td><b>🔴 Atención:</b> Primer proyecto sin previos conocimientos en programación.🔴
 </td>
 </tr>
 </table> 
@@ -55,6 +55,8 @@ Se ejecuta desde el navegador web y dispone de varias funcionalidades, todas sig
 
 - El último botón, si el Tamagotchi viene del estado 2, muere al clicar y al volver a clicar aparecerá el huevo.
 En cambio, si viene del estado (1), directamente pasará a huevo.
+
+![image](./img/screens.jpg)
 
 ### Menciones
 Gran parte de la inspiración técnica para el desarrollo del Tamagotchi nace de las tardes en Wayco Ruzafa, con mis compañeros del bootcamp, donde la lluvia de ideas, la colaboración y el trabajo en grupo es una constante. Gracias a todos. 
