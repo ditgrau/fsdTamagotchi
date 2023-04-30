@@ -31,7 +31,7 @@ Este Tamagotchi ha sido desarrollado como parte del Bootcamp de Full Stack Devel
 - [⚖️ Licencia y Copyright](#licencia-y-copyright)
 
 ### Referencias e inspiración
-![image](../Tamagotchi/img/Inspiracion.jpg)
+![image](./img/Inspiracion.jpg)
 
 Para el dispositivo, me he inspirado en uno de nueva generación, pero he querido mantener la pantalla y la cadena de los Tamagotchi de principios de los 2000. 
 
