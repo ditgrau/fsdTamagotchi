@@ -2,7 +2,7 @@
 
 function birth() {
     let displayImage = document.getElementById('content')
-    if (displayImage.src.match('../Tamagotchi/img/huevo.png')) {
+    if (displayImage.src.match('"../Tamagotchi/img/huevo.png')) {
         displayImage.src = "../Tamagotchi/img/tama.png"
     }
 }
