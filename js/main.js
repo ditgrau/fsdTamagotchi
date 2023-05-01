@@ -2,25 +2,25 @@
 
 function birth() {
     let displayImage = document.getElementById('content')
-    if (displayImage.src.match('./img/huevo.PNG')) {
-        displayImage.src = "./img/tama.PNG"
+    if (displayImage.src.match('./img/huevo.png')) {
+        displayImage.src = "./img/tama.png"
     }
 }
 
 function popo() {
     let displayImage = document.getElementById('content')
-    if (displayImage.src.match('./img/tama.PNG')) {
-        displayImage.src = "./img/caca.PNG"
+    if (displayImage.src.match('./img/tama.png')) {
+        displayImage.src = "./img/caca.png"
     } else {
-        displayImage.src = "./img/tama.PNG"
+        displayImage.src = "./img/tama.png"
     }
 }
 
 function death() {
     let displayImage = document.getElementById('content')
-    if (displayImage.src.match('./img/caca.PNG')) {
-        displayImage.src = "./img/muerte.PNG"
+    if (displayImage.src.match('./img/caca.png')) {
+        displayImage.src = "./img/muerte.png"
     } else {
-        displayImage.src = "./img/huevo.PNG"
+        displayImage.src = "./img/huevo.png"
     }
 }
