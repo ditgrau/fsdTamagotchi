@@ -324,8 +324,9 @@ body {
 .mouth {
     width: 2.5rem;
     height:1.3rem;
-    background-color: brown;
-    margin-top: 1.2em;
+    background: url(../img/sonrisita.png) no-repeat;
+    background-size: contain;
+    margin-top: 1.5em;
 }
 
 .cheek-left, .cheek-right{
@@ -368,6 +369,7 @@ body {
     box-shadow: 0 0.1em 0.18rem 0.02rem rgb(91, 151, 116);
     background: radial-gradient(circle farthest-side at top center, rgb(255, 182, 206) 50%,var(--pink) 100%);   
 }
+
 
         /*// Controls - Front side - EGG//*/
 
@@ -569,13 +571,3 @@ body {
     background: radial-gradient(circle farthest-side at top center, #cb7360 50%, #7a2015 100%);
 }
 
-/* -- Javascript function - hatching an egg -- */
-
-
-.birth{
-    background-image: url(../img/tama.PNG);
-}
-
-.hatching{
-    background-image: url(../img/tama.PNG);
-}
